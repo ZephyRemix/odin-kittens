@@ -1,0 +1,3 @@
+<h1>Edit your kitten's details</h1>
+<%= render partial: "form", locals: { kitten: @kitten } %>
+<%= link_to 'Delete profile', kitten_path(@kitten), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
